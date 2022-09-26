@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>
-    <%- title %>
+    桌遊逗陣走
   </title>
   <!-- Material Symbols 靜態cdn -->
   <link rel="stylesheet"
@@ -81,7 +81,153 @@
     </div>
   </nav>
 
-  <%- contents %>
+  
+<section class="bg-secondary-2 py-13">
+    <div class="container">
+        <div class="row flex-column flex-md-row">
+            <div class="col-12 col-md-3 mb-8 mb-lg-0 mymenu">
+                <div class="card rounded-5 border-0">
+                    <div class="card-body py-6">
+                        <!-- 個人大頭照區塊 -->
+                        <div class="mb-4">
+                            <div class="mb-4 mx-auto position-relative account-user">
+                                <img src="./assets/images/photo2.JPG" alt="使用者大頭照"
+                                    class="account-user-photo rounded-circle">
+                                <a href="#" class="position-absolute top-100 start-100 translate-middle user-icon"
+                                    data-bs-toggle="tooltip" data-bs-placement="bottom" title="編輯頭像">
+                                    <span class="material-symbols-outlined">
+                                        face_retouching_natural
+                                    </span>
+                                </a>
+                            </div>
+                            <h2 class="fs-6 mb-2 text-center">Jenny</h2>
+                            <p class="fs-9 text-center text-primary-2">12345@example.com</p>
+                        </div>
+                        <!-- 左側邊選單 -->
+                        <ul class="nav nav-tabs flex-column border-0 personal-menu">
+                            <li class="nav-item mb-3">
+                                <a class="nav-link d-flex align-items-center px-0 py-2 border-0" href="./userarea.html">
+                                    <span class="material-symbols-outlined me-3">
+                                        assignment_ind
+                                    </span>
+                                    基本資料
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link d-flex align-items-center px-0 py-2 border-0"
+                                    href="#collapseExample1" data-bs-toggle="collapse" aria-expanded="false"
+                                    aria-controls="collapseExample1">
+                                    <span class="material-symbols-outlined me-3">
+                                        collections_bookmark
+                                    </span>
+                                    我的收藏清單
+                                    <span class="material-symbols-outlined">
+                                        expand_more
+                                    </span>
+                                </a>
+                                <div class="collapse ms-10" id="collapseExample1">
+                                    <a href="./collectlist.html" class="mt-2 mb-3">桌遊文章</a>
+                                    <a href="./collectlist.html">致勝秘訣</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center px-0 py-2 border-0"
+                                    href="#collapseExample2" data-bs-toggle="collapse" aria-expanded="false"
+                                    aria-controls="collapseExample2">
+                                    <span class="material-symbols-outlined me-3">
+                                        description
+                                    </span>
+                                    已發佈的內容
+                                    <span class="material-symbols-outlined">
+                                        expand_more
+                                    </span>
+                                </a>
+                                <div class="collapse ms-10" id="collapseExample2">
+                                    <a href="#" class="mt-2 mb-3">桌遊文章</a>
+                                    <a href="#">致勝秘訣</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="card rounded-5 border-0">
+                    <div class="card-body p-9">
+                        <p class="card-title fs-4 pb-2 mb-5 border-bottom">基本資料</p>
+                        <form>
+                            <div class="row mb-5 align-items-center">
+                                <label for="inputName1" class="col-sm-2 col-form-label">使用者名稱</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputName1" value="Jenny" readonly>
+                                </div>
+                            </div>
+                            <div class="row mb-5 align-items-center">
+                                <label for="date" class="col-sm-2 col-form-label">出生日期</label>
+                                <div class="col-sm-10">
+                                    <input type="date" id="date">
+                                </div>
+                            </div>
+                            <div class="row mb-5 align-items-center">
+                                <label for="inputSex1" class="col-sm-2 col-form-label">性別</label>
+                                <div class="col-sm-10">
+                                    <div class="form-check form-check-inline me-3">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault3"
+                                            id="flexRadioDefault31">
+                                        <label class="form-check-label" for="flexRadioDefault31">
+                                            男生
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault3"
+                                            id="flexRadioDefault32">
+                                        <label class="form-check-label" for="flexRadioDefault32">
+                                            女生
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-7 align-items-center">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">信箱</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail3" value="12345@example.com" readonly>
+                                </div>
+                            </div>
+                            <div class="row py-5 align-items-center bg-secondary-3">
+                                <p class="fs-5 mb-3">變更使用者密碼</p>
+                                <label for="inputPassword31" class="col-sm-2 col-form-label">輸入舊密碼</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword31">
+                                </div>
+                            </div>
+                            <div class="row py-5 align-items-center bg-secondary-3">
+                                <label for="inputPassword32" class="col-sm-2 col-form-label">輸入新密碼</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword32">
+                                </div>
+                            </div>
+                            <div class="row py-5 align-items-center bg-secondary-3">
+                                <label for="inputPassword33" class="col-sm-2 col-form-label">新密碼確認</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword33">
+                                </div>
+                            </div>
+                            <!-- placeholder寫法2.在js設定 -->
+                            <div class="row d-flex align-item-start align-items-sm-center flex-column flex-sm-row mt-7">
+                                <p class="col-sm-2">自我介紹</p>
+                                <div id="editor" class="col-sm-10 editor-block"></div>
+                            </div>
+                            <div class="d-flex flex-row justify-content-end mt-7">
+                                <button type="submit" class="btn btn-outline-primary px-5 py-3 me-4">取消</button>
+                                <button type="submit" class="btn btn-outline-primary px-5 py-3">確認修改</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <footer class="footer bg-primary-3 py-13 py-lg-16" id="share-web">
       <div class="container">
