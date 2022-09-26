@@ -1,0 +1,197 @@
+---
+title: 桌遊逗陣走
+layout: ./app/layout.ejs
+engine: ejs
+current: collect-article
+---
+
+<section class="bg-secondary-2 py-13">
+    <div class="container">
+        <div class="row flex-column flex-md-row">
+            <div class="col-12 col-md-3 mb-8 mb-lg-0 mymenu">
+                <div class="card rounded-5 border-0">
+                    <div class="card-body py-6">
+                        <!-- 個人大頭照區塊 -->
+                        <div class="mb-4">
+                            <div class="mb-4 mx-auto position-relative account-user">
+                                <img src="./assets/images/photo2.JPG" alt="使用者大頭照"
+                                    class="account-user-photo rounded-circle">
+                                <a href="#" class="position-absolute top-100 start-100 translate-middle user-icon"
+                                    data-bs-toggle="tooltip" data-bs-placement="bottom" title="編輯頭像">
+                                    <span class="material-symbols-outlined">
+                                        face_retouching_natural
+                                    </span>
+                                </a>
+                            </div>
+                            <h2 class="fs-6 mb-2 text-center">Jenny</h2>
+                            <p class="fs-9 text-center text-primary-2">12345@example.com</p>
+                        </div>
+                        <!-- 左側邊選單 -->
+                        <ul class="nav nav-tabs flex-column border-0 personal-menu">
+                            <li class="nav-item mb-3">
+                                <a class="nav-link d-flex align-items-center px-0 py-2 border-0" href="./userarea.html">
+                                    <span class="material-symbols-outlined me-3">
+                                        assignment_ind
+                                    </span>
+                                    基本資料
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link d-flex align-items-center px-0 py-2 border-0"
+                                    href="#collapseExample1" data-bs-toggle="collapse" aria-expanded="false"
+                                    aria-controls="collapseExample1">
+                                    <span class="material-symbols-outlined me-3">
+                                        collections_bookmark
+                                    </span>
+                                    我的收藏清單
+                                    <span class="material-symbols-outlined">
+                                        expand_more
+                                    </span>
+                                </a>
+                                <div class="collapse ms-10" id="collapseExample1">
+                                    <a href="./collectlist.html" class="mt-2 mb-3">桌遊文章</a>
+                                    <a href="./collectlist.html">致勝秘訣</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center px-0 py-2 border-0"
+                                    href="#collapseExample2" data-bs-toggle="collapse" aria-expanded="false"
+                                    aria-controls="collapseExample2">
+                                    <span class="material-symbols-outlined me-3">
+                                        description
+                                    </span>
+                                    已發佈的內容
+                                    <span class="material-symbols-outlined">
+                                        expand_more
+                                    </span>
+                                </a>
+                                <div class="collapse ms-10" id="collapseExample2">
+                                    <a href="./publishlist.html" class="mt-2 mb-3">桌遊文章</a>
+                                    <a href="./publishlist.html">致勝秘訣</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-9 mymenu">
+                <div class="card rounded-5 border-0">
+                    <div class="card-body p-9">
+                        <h3 class="card-title fs-4 pb-2 mb-5 border-bottom">我的收藏清單</h3>
+
+                        <ul class="nav nav-pills nav-fill bg-primary-3 mb-7" id="myTab2" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" aria-current="page" href="#" id="home-tab"
+                                    data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab"
+                                    aria-controls="home" aria-selected="true">桌遊文章
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" href="#" id="profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                                    aria-selected="false">致勝秘訣
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <!-- 桌遊文章 -->
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card mb-6">
+                                    <div class="card-body">
+                                        <div class="card-title d-flex justify-content-between flex-column flex-lg-row">
+                                            <a href="./article-party.html" class="fs-6">
+                                                玩機密代號測試默契
+                                            </a>
+                                            <p class="p-2 rounded-5 bg-secondary-3">派對遊戲</p>
+                                        </div>
+                                        <div
+                                            class="card-text text-primary-2 d-flex justify-content-between flex-column flex-lg-row">
+                                            <div>
+                                                <h4 class="fs-8">作者：ABC</h4>
+                                                <p class="">發佈時間：2022/02/03</p>
+                                                <p class="">桌遊名稱：機密代號</p>
+                                            </div>
+                                            <p>收藏時間：2022/02/05</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button type="submit"
+                                            class="btn btn-outline-danger px-5 py-3 me-4">移除收藏</button>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title d-flex justify-content-between flex-column flex-lg-row">
+                                            <a href="./article-strategy.html" class="fs-6">
+                                                超精緻的花磚物語
+                                            </a>
+                                            <p class="p-2 rounded-5 bg-secondary-3">策略遊戲</p>
+                                        </div>
+                                        <div
+                                            class="card-text text-primary-2 d-flex justify-content-between flex-column flex-lg-row">
+                                            <div>
+                                                <h4 class="fs-8">作者：Jack</h4>
+                                                <p class="">發佈時間：2022/02/08</p>
+                                                <p class="">桌遊名稱：花磚物語</p>
+                                            </div>
+                                            <p>收藏時間：2022/02/20</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button type="submit"
+                                            class="btn btn-outline-danger px-5 py-3 me-4">移除收藏</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 致勝秘訣 -->
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="row row-cols-1 row-cols-md-2 g-4">
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <img src="./assets/images/game-rummikub.jpg"
+                                                class="card-img-top w-50 d-block mx-auto mt-4" alt="拉密桌遊圖">
+                                            <div class="card-body">
+                                                <div class="card-title d-flex justify-content-between flex-column flex-lg-row">
+                                                    <a href="./winsecret-strategy.html" class="fs-7">
+                                                        拉密（Rummikub）
+                                                    </a>
+                                                    <p class="p-2 rounded-5 bg-secondary-3">策略遊戲</p>
+                                                </div>
+                                                <p class="card-text text-primary-2">收藏時間：2022/02/05</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button type="submit"
+                                                    class="btn btn-outline-danger px-5 py-3 d-block ms-auto">移除收藏
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <img src="./assets/images/game-gifttrap.jpg"
+                                                class="card-img-top w-50 d-block mx-auto mt-4" alt="送禮高手桌遊圖">
+                                            <div class="card-body">
+                                                <div class="card-title d-flex justify-content-between flex-column flex-lg-row">
+                                                    <a href="./winsecret-party.html" class="fs-7">
+                                                        送禮高手（Gift Trap）
+                                                    </a>
+                                                    <p class="p-2 rounded-5 bg-secondary-3">派對遊戲</p>
+                                                </div>
+                                                <p class="card-text text-primary-2">收藏時間：2022/02/10</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button type="submit"
+                                                    class="btn btn-outline-danger px-5 py-3 d-block ms-auto">移除收藏
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

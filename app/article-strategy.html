@@ -1,0 +1,395 @@
+---
+title: 桌遊逗陣走
+layout: ./app/layout.ejs
+engine: ejs
+current: article-strategy
+---
+
+<!-- 次目錄 -->
+<header class="second-menu">
+    <div class="bg-white py-3 fixed-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-3 col-lg-2">
+                    <h2 class="fs-8 text-center rounded-5 bg-secondary-3">桌遊文章</h2>
+                </div>
+
+                <div class="col-9 col-lg-10">
+                    <div class="swiper swiper-second-menu">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="./article-party.html" class="p-2">派對遊戲</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./article-strategy.html" class="p-2">策略遊戲</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="p-2">合作類型</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="p-2">陣營類型</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="p-2">角色情境</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="p-2">紙牌遊戲</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="p-2">家庭遊戲</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="p-2">兒童遊戲</a>
+                            </div>
+                        </div>
+                        <span class="material-symbols-outlined swiper-button-next text-dark">
+                            chevron_right
+                        </span>
+                        <span class="material-symbols-outlined swiper-button-prev text-dark">
+                            chevron_left
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="bg-secondary-2 pb-13 pb-lg-15 second-menu-main">
+    <div class="container">
+        <div class="row align-items-start flex-column flex-lg-row">
+            <!-- 左側文章列表 -->
+            <div class="col-12 col-lg-3">
+                <ul class="nav flex-column nav-pills bg-white" id="v-pills-tab" role="tablist"
+                    aria-orientation="vertical">
+                    <li class="nav-item border" role="presentation">
+                        <a class="nav-link active rounded-0" id="v-pills-article-001-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-article-001" type="button" role="tab"
+                            aria-controls="v-pills-article-001" aria-selected="true">
+                            <ul>
+                                <li class="d-flex justify-content-between fs-9">
+                                    <p>ABC</p>
+                                    <p>2022/02/03</p>
+                                </li>
+                                <li class="fs-7 fs-lg-6">來卡坦島成為拓荒者</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="nav-item border" role="presentation">
+                        <a class="nav-link rounded-0" id="v-pills-article-002-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-article-002" type="button" role="tab"
+                            aria-controls="v-pills-article-002" aria-selected="false">
+                            <ul>
+                                <li class="d-flex justify-content-between fs-9">
+                                    <p>Jack</p>
+                                    <p>2022/02/08</p>
+                                </li>
+                                <li class="fs-7 fs-lg-6">超精緻的花磚物語</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="nav-item border" role="presentation">
+                        <a class="nav-link rounded-0" id="v-pills-article-003-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-article-003" type="button" role="tab"
+                            aria-controls="v-pills-article-003" aria-selected="false">
+                            <ul>
+                                <li class="d-flex justify-content-between fs-9">
+                                    <p>Mary</p>
+                                    <p>2022/01/03</p>
+                                </li>
+                                <li class="fs-7 fs-lg-6">迷你版的麻將拉密</li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-9 mt-7 mt-lg-0">
+                <article class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-article-001" role="tabpanel"
+                        aria-labelledby="v-pills-article-001-tab">
+                        <div class="card text-center">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <a href="#" class="d-flex align-items-center">
+                                        <span class="material-symbols-outlined me-2 bookmarks-icon">
+                                            bookmarks
+                                        </span>
+                                    </a>
+                                    <h3 class="fs-6 fs-lg-4">
+                                        來卡坦島成為拓荒者
+                                    </h3>
+                                </div>
+                                <p class="p-2 rounded-5 bg-secondary-3">策略遊戲</p>
+                            </div>
+                            <div class="card-body text-start my-4">
+                                <div class="card-title d-flex justify-content-between flex-column flex-lg-row mb-8">
+                                    <div>
+                                        <h4 class="fs-7 fs-lg-6 lh-lg">作者：ABC</h4>
+                                        <p class="fs-7 fs-lg-6 lh-lg">發佈時間：2022/02/03</p>
+                                        <p class="fs-7 fs-lg-6 lh-lg">桌遊名稱：卡坦島</p>
+                                    </div>
+                                    <!-- 多寫一層，讓解析度變小時評分模板分數不會受此增減 -->
+                                    <div>
+                                        <div class="star-rating">
+                                            <div class="star-rating-top" style="width:80%">
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
+                                            <div class="star-rating-bottom">
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-text fs-8 fs-lg-7 mb-8">
+                                    <img src="./assets/images/jaciel-melnik-DT9d0RzDfe4-unsplash.jpg" alt="卡坦島桌遊圖"
+                                        class="float-end img-fluid w-75">
+                                    <p class="lh-lg">
+                                        卡坦島（Catan）桌遊裡，玩家扮演卡坦島的新移民者，要拓荒開墾自己的領地。玩家輪流擲骰子決定哪個板塊可以生產資源，因此加入了一點機率和運氣成份。透過在不同的板塊取得的資源，玩家可以建造村莊和道路。當村莊數量越多，就可以從板塊收成越多的資源。玩家也可以和其他玩家交易，或是買發展卡來獲取額外的資源和機會。卡坦島是很經典的策略型桌遊，目前已經有好幾種擴充版。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted text-start bg-primary-3 py-4">
+                                <p class="mb-3">覺得這篇文章如何? 請給星星評分吧</p>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault11">
+                                    <label class="form-check-label" for="flexRadioDefault11">
+                                        一顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault12">
+                                    <label class="form-check-label" for="flexRadioDefault12">
+                                        二顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault13">
+                                    <label class="form-check-label" for="flexRadioDefault13">
+                                        三顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault14">
+                                    <label class="form-check-label" for="flexRadioDefault14">
+                                        四顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault15">
+                                    <label class="form-check-label" for="flexRadioDefault15">
+                                        五顆星
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-article-002" role="tabpanel"
+                        aria-labelledby="v-pills-article-002-tab">
+                        <div class="card text-center">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <a href="#" class="d-flex align-items-center">
+                                        <span class="material-symbols-outlined me-2 bookmarks-icon">
+                                            bookmarks
+                                        </span>
+                                    </a>
+                                    <h3 class="fs-6 fs-lg-4">
+                                        超精緻的花磚物語
+                                    </h3>
+                                </div>
+                                <p class="p-2 rounded-5 bg-secondary-3">策略遊戲</p>
+                            </div>
+                            <div class="card-body text-start my-4">
+                                <div class="card-title d-flex justify-content-between flex-column flex-lg-row mb-8">
+                                    <div>
+                                        <h4 class="fs-7 fs-lg-6 lh-lg">作者：Jack</h4>
+                                        <p class="fs-7 fs-lg-6 lh-lg">發佈時間：2022/02/08</p>
+                                        <p class="fs-7 fs-lg-6 lh-lg">桌遊名稱：花磚物語</p>
+                                    </div>
+                                    <!-- 多寫一層，讓解析度變小時評分模板分數不會受此增減 -->
+                                    <div>
+                                        <div class="star-rating">
+                                            <div class="star-rating-top" style="width:80%">
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
+                                            <div class="star-rating-bottom">
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-text fs-8 fs-lg-7 mb-8">
+                                    <img src="./assets/images/ashkan-forouzani-oVrkcrvAO3s-unsplash.jpg" alt="花磚物語桌遊圖"
+                                        class="float-end img-fluid w-75">
+                                    <p class="lh-lg">
+                                        遊戲主要動作為拿取磚塊、完成花紋列、為完成的磚牆計分，遊戲結束時獲得最多分數的玩家獲勝。
+                                    </p>
+                                    <br>
+                                    <p class="lh-lg">
+                                        我覺得這遊戲厲害的地方是遊戲有很多層次的考量，但是用了最少的動作和空間達到這件事，不需要太多複雜的配件和空間，玩家就可以有很多策略上的選擇。比如拿取磚塊時，從工廠還是場中央拿、拿什麼顏色等是一個考量，拿了磚塊要放
+                                        5
+                                        列花紋列的哪一列是一個考量，而花紋列右邊的磚牆又限制了可以放置到花紋列的磚塊，這些細膩的規則設計，讓這遊戲有很小的學習曲線，又有不錯的遊戲體驗。重點在於：怎麼拿、怎麼放而已，非常厲害。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted text-start bg-primary-3 py-4">
+                                <p class="mb-3">覺得這篇文章如何? 請給星星評分吧</p>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault21">
+                                    <label class="form-check-label" for="flexRadioDefault21">
+                                        一顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault22">
+                                    <label class="form-check-label" for="flexRadioDefault22">
+                                        二顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault23">
+                                    <label class="form-check-label" for="flexRadioDefault23">
+                                        三顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault24">
+                                    <label class="form-check-label" for="flexRadioDefault24">
+                                        四顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault25">
+                                    <label class="form-check-label" for="flexRadioDefault25">
+                                        五顆星
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-article-003" role="tabpanel"
+                        aria-labelledby="v-pills-article-003-tab">
+                        <div class="card text-center">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <a href="#" class="d-flex align-items-center">
+                                        <span class="material-symbols-outlined me-2 bookmarks-icon">
+                                            bookmarks
+                                        </span>
+                                    </a>
+                                    <h3 class="fs-6 fs-lg-4">
+                                        迷你版的麻將拉密
+                                    </h3>
+                                </div>
+                                <p class="p-2 rounded-5 bg-secondary-3">策略遊戲</p>
+                            </div>
+                            <div class="card-body text-start my-4">
+                                <div class="card-title d-flex justify-content-between flex-column flex-lg-row mb-8">
+                                    <div>
+                                        <h4 class="fs-7 fs-lg-6 lh-lg">作者：Mary</h4>
+                                        <p class="fs-7 fs-lg-6 lh-lg">發佈時間：2022/01/03</p>
+                                        <p class="fs-7 fs-lg-6 lh-lg">桌遊名稱：拉密</p>
+                                    </div>
+                                    <!-- 多寫一層，讓解析度變小時評分模板分數不會受此增減 -->
+                                    <div>
+                                        <div class="star-rating">
+                                            <div class="star-rating-top" style="width:80%">
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
+                                            <div class="star-rating-bottom">
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-text fs-8 fs-lg-7 mb-8">
+                                    <img src="./assets/images/2015-10-23-16-17-33.jpg" alt="拉密桌遊圖"
+                                        class="float-end img-fluid w-75">
+                                    <p class="lh-lg">
+                                        拉密桌遊是簡單版的麻將，玩法則類似撲克牌的大老二，譬如牌的組合有鐵支（三張或四張＂數字相同＂但＂顏色不同＂的牌）；順子（三張以上＂顏色相同數字連續＂的牌）。
+                                    </p>
+                                    <br>
+                                    <p class="lh-lg">
+                                        玩家每次出牌前都要想後面好幾步局要出什麼，並且想想手上的牌能怎麼拆解。比較不一樣的是，拉密每次出牌可以出好幾次，直到玩家沒牌出，則輪下一位玩家出牌。遊戲過程還蠻訓練腦力及眼力，同桌厲害的桌遊朋友說這遊戲比的是誰能一次出最多牌，通常離勝利就不遠啦!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted text-start bg-primary-3 py-4">
+                                <p class="mb-3">覺得這篇文章如何? 請給星星評分吧</p>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault31">
+                                    <label class="form-check-label" for="flexRadioDefault31">
+                                        一顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault32">
+                                    <label class="form-check-label" for="flexRadioDefault32">
+                                        二顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault33">
+                                    <label class="form-check-label" for="flexRadioDefault33">
+                                        三顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault34">
+                                    <label class="form-check-label" for="flexRadioDefault34">
+                                        四顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault35">
+                                    <label class="form-check-label" for="flexRadioDefault35">
+                                        五顆星
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</main>

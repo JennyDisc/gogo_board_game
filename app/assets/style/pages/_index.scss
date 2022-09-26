@@ -1,0 +1,68 @@
+.banner {
+    background-image: url(../images/pexels-cottonbro-4691567.jpg);
+    height: 399px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .container {
+        height: 100%;
+    }
+}
+
+.read-more-link:hover {
+    text-decoration: underline;
+}
+
+.pop-article {
+    .card-body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .card-title {
+        @include star-rate;
+    }
+
+    .card:hover {
+
+        .card-img-top,
+        .card-body,
+        .card-footer {
+            opacity: 0.2;
+        }
+
+        .card-img-overlay {
+            z-index: 1;
+        }
+    }
+
+    .card-img-overlay {
+        z-index: -1;
+    }
+
+    .btn:hover {
+        background-color: black;
+        color: $white;
+    }
+}
+
+.win-secret {
+    .card-footer {
+        @include star-rate;
+    }
+
+    .img {
+        width: 100%;
+        height: 582px;
+        object-fit: cover;
+    }
+
+    .btn:hover {
+        background-color: black;
+        color: $white;
+    }
+
+    .card:hover {
+        box-shadow: 5px 5px 10px gray;
+    }
+}

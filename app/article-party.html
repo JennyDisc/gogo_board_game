@@ -1,0 +1,498 @@
+---
+title: 桌遊逗陣走
+layout: ./app/layout.ejs
+engine: ejs
+current: article-party
+---
+
+<!-- 次目錄 -->
+<header class="second-menu">
+    <div class="bg-white py-3 fixed-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-3 col-lg-2">
+                    <h2 class="fs-8 text-center rounded-5 bg-secondary-3">桌遊文章</h2>
+                </div>
+
+                <div class="col-9 col-lg-10">
+                    <div class="swiper swiper-second-menu">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="./article-party.html" class="p-2">派對遊戲</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./article-strategy.html" class="p-2">策略遊戲</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="p-2">合作類型</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="p-2">陣營類型</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="p-2">角色情境</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="p-2">紙牌遊戲</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="p-2">家庭遊戲</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="p-2">兒童遊戲</a>
+                            </div>
+                        </div>
+                        <span class="material-symbols-outlined swiper-button-next text-dark">
+                            chevron_right
+                        </span>
+                        <span class="material-symbols-outlined swiper-button-prev text-dark">
+                            chevron_left
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="bg-secondary-2 pb-13 pb-lg-15 second-menu-main">
+    <div class="container">
+        <div class="row align-items-start flex-column flex-lg-row">
+            <!-- 左側文章列表 -->
+            <div class="col-12 col-lg-3">
+                <ul class="nav flex-column nav-pills bg-white" id="v-pills-tab" role="tablist"
+                    aria-orientation="vertical">
+                    <li class="nav-item border" role="presentation">
+                        <a class="nav-link active rounded-0" id="v-pills-article-001-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-article-001" type="button" role="tab"
+                            aria-controls="v-pills-article-001" aria-selected="true">
+                            <ul>
+                                <li class="d-flex justify-content-between fs-9">
+                                    <p>ABC</p>
+                                    <p>2022/02/03</p>
+                                </li>
+                                <li class="fs-7 fs-lg-6">玩機密代號測試默契</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="nav-item border" role="presentation">
+                        <a class="nav-link rounded-0" id="v-pills-article-002-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-article-002" type="button" role="tab"
+                            aria-controls="v-pills-article-002" aria-selected="false">
+                            <ul>
+                                <li class="d-flex justify-content-between fs-9">
+                                    <p>Jack</p>
+                                    <p>2022/02/08</p>
+                                </li>
+                                <li class="fs-7 fs-lg-6">奔跑吧駱駝</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="nav-item border" role="presentation">
+                        <a class="nav-link rounded-0" id="v-pills-article-003-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-article-003" type="button" role="tab"
+                            aria-controls="v-pills-article-003" aria-selected="false">
+                            <ul>
+                                <li class="d-flex justify-content-between fs-9">
+                                    <p>Jenny</p>
+                                    <p>2022/01/03</p>
+                                </li>
+                                <li class="fs-7 fs-lg-6">叫我繪畫高手</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="nav-item border" role="presentation">
+                        <a class="nav-link rounded-0" id="v-pills-article-004-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-article-004" type="button" role="tab"
+                            aria-controls="v-pills-article-004" aria-selected="false">
+                            <ul>
+                                <li class="d-flex justify-content-between fs-9">
+                                    <p>Cathy</p>
+                                    <p>2022/01/26</p>
+                                </li>
+                                <li class="fs-7 fs-lg-6">我是送禮高手</li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-9 mt-7 mt-lg-0">
+                <article class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-article-001" role="tabpanel"
+                        aria-labelledby="v-pills-article-001-tab">
+                        <div class="card text-center">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <a href="#" class="d-flex align-items-center">
+                                        <span class="material-symbols-outlined me-2 bookmarks-icon">
+                                            bookmarks
+                                        </span>
+                                    </a>
+                                    <h3 class="fs-6 fs-lg-4">
+                                        玩機密代號測試默契
+                                    </h3>
+                                </div>
+                                <p class="p-2 rounded-5 bg-secondary-3">派對遊戲</p>
+                            </div>
+                            <div class="card-body text-start my-4">
+                                <div class="card-title d-flex justify-content-between flex-column flex-lg-row mb-8">
+                                    <div>
+                                        <h4 class="fs-7 fs-lg-6 lh-lg">作者：ABC</h4>
+                                        <p class="fs-7 fs-lg-6 lh-lg">發佈時間：2022/02/03</p>
+                                        <p class="fs-7 fs-lg-6 lh-lg">桌遊名稱：機密代號</p>
+                                    </div>
+                                    <!-- 多寫一層，讓解析度變小時評分模板分數不會受此增減 -->
+                                    <div>
+                                        <div class="star-rating">
+                                            <div class="star-rating-top" style="width:80%">
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
+                                            <div class="star-rating-bottom">
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-text fs-8 fs-lg-7 mb-8">
+                                    <img src="./assets/images/sander-sammy-HoOP0nxd8eg-unsplash.jpg" alt="機密代號桌遊圖"
+                                        class="float-end img-fluid">
+                                    <p class="lh-lg">
+                                        機密代號（Codenames）是一款猜字推理的桌遊，我覺得最困難的角色是隊長，提供給隊員的線索必須符合以下規範。線索必須是一個名詞（諧音不行）不能用句子，而且線索不能包含代號卡裡面的文字。名詞例如”飛機”、”嘴巴”可以當線索。”紅色的飛機”、”奔跑的小狗”就不可以。如果隊長違反合理線索原則，可以掀開一張另一隊的特務卡當作懲罰。
+                                    </p>
+                                    <br>
+                                    <p class="lh-lg">
+                                        第一次玩就擔任隊長角色，只能講名詞實在很痛苦。最後兩隊達成協議前幾場遊戲，讓隊長可以用句子，大家先熟悉下遊戲。過程中遇到很難描述的線索，就講彼此回億，記憶好的隊友肯定知道隊長在說什麼。還可以順便測試隊友記憶力！十分推薦這款遊戲，大家都有參與感。隊員們收到線索後可以自行討論，隊長在旁笑到東倒西歪。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted text-start bg-primary-3 py-4">
+                                <p class="mb-3">覺得這篇文章如何? 請給星星評分吧</p>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault11">
+                                    <label class="form-check-label" for="flexRadioDefault11">
+                                        一顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault12">
+                                    <label class="form-check-label" for="flexRadioDefault12">
+                                        二顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault13">
+                                    <label class="form-check-label" for="flexRadioDefault13">
+                                        三顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault14">
+                                    <label class="form-check-label" for="flexRadioDefault14">
+                                        四顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault15">
+                                    <label class="form-check-label" for="flexRadioDefault15">
+                                        五顆星
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-article-002" role="tabpanel"
+                        aria-labelledby="v-pills-article-002-tab">
+                        <div class="card text-center">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <a href="#" class="d-flex align-items-center">
+                                        <span class="material-symbols-outlined me-2 bookmarks-icon">
+                                            bookmarks
+                                        </span>
+                                    </a>
+                                    <h3 class="fs-6 fs-lg-4">
+                                        奔跑吧駱駝
+                                    </h3>
+                                </div>
+                                <p class="p-2 rounded-5 bg-secondary-3">派對遊戲</p>
+                            </div>
+                            <div class="card-body text-start my-4">
+                                <div class="card-title d-flex justify-content-between flex-column flex-lg-row mb-8">
+                                    <div>
+                                        <h4 class="fs-7 fs-lg-6 lh-lg">作者：Jack</h4>
+                                        <p class="fs-7 fs-lg-6 lh-lg">發佈時間：2022/02/08</p>
+                                        <p class="fs-7 fs-lg-6 lh-lg">桌遊名稱：駱駝大賽</p>
+                                    </div>
+                                    <!-- 多寫一層，讓解析度變小時評分模板分數不會受此增減 -->
+                                    <div>
+                                        <div class="star-rating">
+                                            <div class="star-rating-top" style="width:80%">
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
+                                            <div class="star-rating-bottom">
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-text fs-8 fs-lg-7 mb-8">
+                                    <img src="./assets/images/frederica-diamanta--75RXBvxT24-unsplash.jpg" alt="駱駝大賽桌遊圖"
+                                        class="float-end img-fluid w-75">
+                                    <p class="lh-lg">
+                                        「駱駝大賽」是一款賭博遊戲，必須在駱駝抵達終點前賺到最多錢的玩家獲勝。遊戲過程超刺激，很像以前大富翁遊戲，可以放炸彈或其他道具，陷害玩家。「駱駝大賽」也可以唷，決定陷阱布置後，玩家能稍微控制駱駝走向。但要能真正預測駱駝名次，還是只能靠自己。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted text-start bg-primary-3 py-4">
+                                <p class="mb-3">覺得這篇文章如何? 請給星星評分吧</p>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault21">
+                                    <label class="form-check-label" for="flexRadioDefault21">
+                                        一顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault22">
+                                    <label class="form-check-label" for="flexRadioDefault22">
+                                        二顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault23">
+                                    <label class="form-check-label" for="flexRadioDefault23">
+                                        三顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault24">
+                                    <label class="form-check-label" for="flexRadioDefault24">
+                                        四顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault25">
+                                    <label class="form-check-label" for="flexRadioDefault25">
+                                        五顆星
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-article-003" role="tabpanel"
+                        aria-labelledby="v-pills-article-003-tab">
+                        <div class="card text-center">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <a href="#" class="d-flex align-items-center">
+                                        <span class="material-symbols-outlined me-2 bookmarks-icon">
+                                            bookmarks
+                                        </span>
+                                    </a>
+                                    <h3 class="fs-6 fs-lg-4">
+                                        叫我繪畫高手
+                                    </h3>
+                                </div>
+                                <p class="p-2 rounded-5 bg-secondary-3">派對遊戲</p>
+                            </div>
+                            <div class="card-body text-start my-4">
+                                <div class="card-title d-flex justify-content-between flex-column flex-lg-row mb-8">
+                                    <div>
+                                        <h4 class="fs-7 fs-lg-6 lh-lg">作者：Jenny</h4>
+                                        <p class="fs-7 fs-lg-6 lh-lg">發佈時間：2022/01/03</p>
+                                        <p class="fs-7 fs-lg-6 lh-lg">桌遊名稱：傳情畫意</p>
+                                    </div>
+                                    <!-- 多寫一層，讓解析度變小時評分模板分數不會受此增減 -->
+                                    <div>
+                                        <div class="star-rating">
+                                            <div class="star-rating-top" style="width:80%">
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
+                                            <div class="star-rating-bottom">
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-text fs-8 fs-lg-7 mb-8">
+                                    <img src="./assets/images/game-telestration2.jpg" alt="傳情畫意桌遊圖"
+                                        class="float-end img-fluid img-thumbnail w-75">
+                                    <p class="lh-lg">這款遊戲可以讓各玩家都能畫畫與猜題，誰都不能躲。遊戲最後各玩家輪流分享自己畫冊的歪樓過程，會發現一個比一個還歪樓啦!
+                                    </p>
+                                    <br>
+                                    <p class="lh-lg">
+                                        將冊子傳給下一位玩家，這位玩家則是依照圖畫寫出答案。接續傳給下一位玩家，該玩家依照答案繼續作畫，依此類推。遊戲結束時，玩家剛好會拿到自己的畫冊，依序分享自己畫冊歪樓的故事。看看是誰讓冊子歪樓啦!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted text-start bg-primary-3 py-4">
+                                <p class="mb-3">覺得這篇文章如何? 請給星星評分吧</p>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault31">
+                                    <label class="form-check-label" for="flexRadioDefault31">
+                                        一顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault32">
+                                    <label class="form-check-label" for="flexRadioDefault32">
+                                        二顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault33">
+                                    <label class="form-check-label" for="flexRadioDefault33">
+                                        三顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault34">
+                                    <label class="form-check-label" for="flexRadioDefault34">
+                                        四顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault35">
+                                    <label class="form-check-label" for="flexRadioDefault35">
+                                        五顆星
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-article-004" role="tabpanel"
+                        aria-labelledby="v-pills-article-004-tab">
+                        <div class="card text-center">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <a href="#" class="d-flex align-items-center">
+                                        <span class="material-symbols-outlined me-2 bookmarks-icon">
+                                            bookmarks
+                                        </span>
+                                    </a>
+                                    <h3 class="fs-6 fs-lg-4">
+                                        我是送禮高手
+                                    </h3>
+                                </div>
+                                <p class="p-2 rounded-5 bg-secondary-3">派對遊戲</p>
+                            </div>
+                            <div class="card-body text-start my-4">
+                                <div class="card-title d-flex justify-content-between flex-column flex-lg-row mb-8">
+                                    <div>
+                                        <h4 class="fs-7 fs-lg-6 lh-lg">作者：Cathy</h4>
+                                        <p class="fs-7 fs-lg-6 lh-lg">發佈時間：2022/01/26</p>
+                                        <p class="fs-7 fs-lg-6 lh-lg">桌遊名稱：送禮高手</p>
+                                    </div>
+                                    <!-- 多寫一層，讓解析度變小時評分模板分數不會受此增減 -->
+                                    <div>
+                                        <div class="star-rating">
+                                            <div class="star-rating-top" style="width:80%">
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
+                                            <div class="star-rating-bottom">
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-text fs-8 fs-lg-7 mb-8">
+                                    <img src="./assets/images/big-potato-2QmQlfZNZKA-unsplash.jpg" alt="送禮高手桌遊圖"
+                                        class="float-end img-fluid w-75">
+                                    <p class="lh-lg">今天和桌遊店的其他玩家湊團玩這款桌遊。推薦玩遊戲前請大夥簡單自我介紹，加深對彼此的印象。透過送禮、評分、收禮這三個遊戲階段。
+                                    </p>
+                                    <br>
+                                    <p class="lh-lg">可以測試自己對新朋友的喜好敏銳度，遊戲分數其實也不是重點，主要是破冰炒熱氣氛啦。推薦大家玩這款桌遊。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted text-start bg-primary-3 py-4">
+                                <p class="mb-3">覺得這篇文章如何? 請給星星評分吧</p>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault41">
+                                    <label class="form-check-label" for="flexRadioDefault41">
+                                        一顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault42">
+                                    <label class="form-check-label" for="flexRadioDefault42">
+                                        二顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault43">
+                                    <label class="form-check-label" for="flexRadioDefault43">
+                                        三顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault44">
+                                    <label class="form-check-label" for="flexRadioDefault44">
+                                        四顆星
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault45">
+                                    <label class="form-check-label" for="flexRadioDefault45">
+                                        五顆星
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</main>

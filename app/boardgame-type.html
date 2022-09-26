@@ -1,0 +1,126 @@
+---
+title: 桌遊逗陣走
+layout: ./app/layout.ejs
+engine: ejs
+current: boardgame-type
+---
+
+<header class="py-13 py-lg-12">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- 佔一網格，不要設高度畫面上其實看不見這區塊。讓選單可以左邊切齊下方卡片 -->
+            <div class="col-lg-1"></div>
+            <div class="col-12 col-lg-10">
+                <!-- list-group-horizontal讓選單水平排版，不寫的話選單會重直排列。overflow-auto當這區塊版面不夠就出現X軸 -->
+                <ul
+                    class="list-group list-group-horizontal overflow-auto justify-content-start justify-content-lg-between">
+                    <li class="list-group-item me-3 me-lg-0 p-0 border-0">
+                        <a class="btn btn-outline-primary px-5 py-3 rounded-4" href="#gametype-party"
+                            role="button">派對遊戲</a>
+                    </li>
+                    <li class="list-group-item me-3 me-lg-0 p-0 border-0">
+                        <a class="btn btn-outline-primary px-5 py-3 rounded-4" href="#gametype-strategy" role="button">策略遊戲</a>
+                    </li>
+                    <li class="list-group-item me-3 me-lg-0 p-0 border-0">
+                        <a class="btn btn-outline-primary px-5 py-3 rounded-4" href="#gametype-cooperation" role="button">合作類型</a>
+                    </li>
+                    <li class="list-group-item me-3 me-lg-0 p-0 border-0">
+                        <a class="btn btn-outline-primary px-5 py-3 rounded-4" href="#gametype-camp" role="button">陣營類型</a>
+                    </li>
+                    <li class="list-group-item me-3 me-lg-0 p-0 border-0">
+                        <a class="btn btn-outline-primary px-5 py-3 rounded-4" href="#gametype-roleplay" role="button">角色情境</a>
+                    </li>
+                    <li class="list-group-item me-3 me-lg-0 p-0 border-0">
+                        <a class="btn btn-outline-primary px-5 py-3 rounded-4" href="#gametype-card" role="button">紙牌遊戲</a>
+                    </li>
+                    <li class="list-group-item me-3 me-lg-0 p-0 border-0">
+                        <a class="btn btn-outline-primary px-5 py-3 rounded-4" href="#gametype-family" role="button">家庭遊戲</a>
+                    </li>
+                    <li class="list-group-item me-3 me-lg-0 p-0 border-0">
+                        <a class="btn btn-outline-primary px-5 py-3 rounded-4" href="#gametype-child" role="button">兒童遊戲</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 佔一網格，不要設高度畫面上其實看不見這區塊。讓選單可以左邊切齊下方卡片 -->
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- 課程清單 -->
+    <section class="pb-13 pb-lg-12">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 mb-4 mb-lg-5 mx-auto" id="gametype-party" data-aos="fade-right" data-aos-offset="400">
+                    <div class="bg-secondary-2 rounded-6 h-100 p-5 p-lg-6">
+                        <h2 class="fs-4 fs-lg-2 mb-4">派對遊戲</h2>
+                        <p class="lh-lg">
+                            派對遊戲通常屬於比較簡單且容易上手的遊戲，規則也很容易理解，且遊戲人數通常比較多。人多玩起來也很歡樂，是炒熱氣氛的好選擇。如妙語說書人（DiXit）、駱駝大賽（Camel
+                            Up）、送禮高手（GiftTRAP）等。</p>
+                    </div>
+                </div>
+                <div class="col-lg-10 mb-4 mb-lg-5 mx-auto" id="gametype-strategy" data-aos="fade-left" data-aos-offset="400">
+                    <div class="bg-secondary-3 rounded-6 h-100 p-5 p-lg-6">
+                        <h2 class="fs-4 fs-lg-2 mb-4">策略遊戲</h2>
+                        <p class="lh-lg">
+                            策略遊戲有比較完善的機制及明確規則，不同遊戲有不同複雜程度的策略。策略遊戲進行的遊戲時間相對較長，很適合喜歡絞盡腦汁的夥伴。如拉密（Rummikub）、卡坦島（CATAN）、璀璨寶石（Splendor）等。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-10 mb-4 mb-lg-5 mx-auto" id="gametype-cooperation" data-aos="fade-right" data-aos-offset="400">
+                    <div class="bg-secondary-2 rounded-6 h-100 p-5 p-lg-6">
+                        <h2 class="fs-4 fs-lg-2 mb-4">合作類型</h2>
+                        <p class="lh-lg">
+                            合作型桌遊是指遊戲中所有玩家都是隊友而非競爭關係，遊戲中大家目標一致，共同想辦法獲得勝利！如心靈同步（THE MIND）、花火（Hanabi）、飛躍魔盜團（Magic Maze）等。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-10 mb-4 mb-lg-5 mx-auto" id="gametype-camp" data-aos="fade-left" data-aos-offset="400">
+                    <div class="bg-secondary-3 rounded-6 h-100 p-5 p-lg-6">
+                        <h2 class="fs-4 fs-lg-2 mb-4">陣營類型</h2>
+                        <p class="lh-lg">
+                            通常至少兩個不同陣營，遊戲大多不知道自己的夥伴有誰，得在遊戲進行當中邊探索邊觀察，才有機會找到同伴，並且和同伴合作來獲得最後勝利。如風聲（The
+                            Message）、阿瓦隆（Avalon）等。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-10 mb-4 mb-lg-5 mx-auto" id="gametype-roleplay" data-aos="fade-right" data-aos-offset="400">
+                    <div class="bg-secondary-2 rounded-6 h-100 p-5 p-lg-6">
+                        <h2 class="fs-4 fs-lg-2 mb-4">角色情境</h2>
+                        <p class="lh-lg">
+                            又稱桌上角色扮演遊戲（Tabletop Role Playing Game,
+                            TRPG）是一種最初的角色扮演遊戲。遊戲一般需要3~5人參與，其中一人為遊戲主持人/說書人，由主持人依照故事大綱帶領遊戲，各扮演自己的角色並隨故事內容與發展進行，參與者既是故事的閱讀者也是故事的創作者。如山中小屋（Betrayal
+                            at House on the Hill）、龍與地下城（Dungeons & Dragons）等。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-10 mb-4 mb-lg-5 mx-auto" id="gametype-card" data-aos="fade-left" data-aos-offset="400">
+                    <div class="bg-secondary-3 rounded-6 h-100 p-5 p-lg-6">
+                        <h2 class="fs-4 fs-lg-2 mb-4">紙牌遊戲</h2>
+                        <p class="lh-lg">
+                            方便攜帶，體積小是紙牌遊戲的特色。有些體積大的桌遊，也有推出紙牌類型，隨時隨地都能用小小的紙牌帶來大大的娛樂！如UNO、誰是牛頭王（Take 6！）等。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-10 mb-4 mb-lg-5 mx-auto" id="gametype-family" data-aos="fade-right" data-aos-offset="400">
+                    <div class="bg-secondary-2 rounded-6 h-100 p-5 p-lg-6">
+                        <h2 class="fs-4 fs-lg-2 mb-4">家庭遊戲</h2>
+                        <p class="lh-lg">
+                            不管小朋友大朋友都很適合玩的桌遊，也很適合家庭聚會，親戚朋遊來家裡一起玩的遊戲。規則簡單進階又不失趣味。如卡卡頌（Carcassonne）、小小城鎮（Tiny Towns）等。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-10 mx-auto" id="gametype-child" data-aos="fade-left" data-aos-offset="400">
+                    <div class="bg-secondary-3 rounded-6 h-100 p-5 p-lg-6">
+                        <h2 class="fs-4 fs-lg-2 mb-4">兒童遊戲</h2>
+                        <p class="lh-lg">
+                            針對兒童所設計的桌遊，兒童桌遊能透過簡單的小遊戲，來促進親子關係，設計的遊戲規則通常相當淺顯易懂。如諾亞方舟（Noah’s ark）、小魚大歷險（Reef Route）、快手疊杯（Speed Cups）等。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>

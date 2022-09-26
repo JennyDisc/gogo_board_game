@@ -1,0 +1,33 @@
+// 全域設定start
+body {
+    line-height: $line-height-base;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    color: $primary;
+    // 因為<nav>固定頂端，這個區塊會脫離原本區塊(浮起來)，所以下面<header>會往上補，為了不讓<header>補，所以在這向上推74px讓放<nav>。不能在<nav>向下推74px，因為這區塊已經浮起來了，會沒做用
+    padding-top: 72px;
+    // 避免aos動畫載入時畫面出現X軸
+    overflow-x: hidden;
+}
+
+a {
+    display: block;
+}   
+
+ul {
+    list-style: none;
+}
+// 覆蓋bootstrap預設樣式
+p,ul {
+    margin: 0;
+    padding: 0;
+}
+
+h2,h3 {
+    margin-bottom: 0;
+}
+
+.btn {
+    padding: 0;
+}
+// 全域設定end

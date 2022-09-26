@@ -1,0 +1,45 @@
+$utilities: map-merge(
+    $utilities, 
+    (
+        "rounded": (
+            property: border-radius,
+            class: rounded,
+            values: (
+              null: $border-radius,
+              0: 0,
+              1: $border-radius-sm,
+              2: $border-radius,
+              3: $border-radius-lg,
+              //   圓角8px
+              4: $border-radius-x,
+              //   圓角12px
+              5: $border-radius-xl,
+              //   圓角20px
+              6: $border-radius-xxl,
+              //   圓角24px
+              7: $border-radius-xxxl,
+              circle: 50%,
+              pill: $border-radius-pill
+            )
+        ),
+        "font-size": (
+            rfs: false,
+            responsive: true,
+            property: font-size,
+            class: fs,
+            values: $font-sizes
+        ),
+        "font-weight": (
+            property: font-weight,
+            class: fw,
+            values: (
+              light: $font-weight-light,
+              lighter: $font-weight-lighter,
+              normal: $font-weight-normal,
+              medium: $font-weight-medium,  
+              bold: $font-weight-bold,
+              bolder: $font-weight-bolder
+            )
+        ),
+    )
+) 
