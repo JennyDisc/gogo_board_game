@@ -4,16 +4,59 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
     .container {
         height: 100%;
     }
 }
 
-.read-more-link:hover {
-    text-decoration: underline;
+.gametype-block {
+    // 固定高度，讓解析度很小時下方區塊背景色不會衝到上面桌遊類型的文字上
+    height: 413px;
+
+    @include md {
+        height: auto;
+    }
+
+    .read-more-link:hover {
+        text-decoration: underline;
+    }
+
+    // 桌遊類型的圖片往下跨區
+    .gametype-img {
+        // ~xsm偏移高度自己try出
+        margin-bottom: -90px;
+
+        @include xsm {
+            margin-bottom: -145px;
+        }
+
+        @include sm {
+            margin-bottom: -231px;
+        }
+
+        @include lg {
+            margin-bottom: -267px;
+        }
+    }
 }
 
 .pop-article {
+    // ~xsm偏移高度自己try出
+    padding-top: 90px;
+
+    @include xsm {
+        padding-top: 145px;
+    }
+
+    @include sm {
+        padding-top: 231px;
+    }
+
+    @include lg {
+        padding-top: 267px;
+    }
+
     .card-body {
         padding-left: 0;
         padding-right: 0;
