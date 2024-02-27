@@ -1,8 +1,85 @@
-# 網頁切版直播班 Gulp 範例 - 加入 Bootstrap 版本
+## 作品說明
+初次接觸桌遊的玩家常面臨尋找合適遊戲的困擾，可能透過關鍵字搜尋、朋友或店員推薦等方式，資料較為分散。譬如網路上篇幅較長且詳細的文章，大多偏向單一遊戲的介紹與心得文、或是主要介紹當前幾款熱門桌遊等。對於想在單一網站上尋找有關桌遊的全面性資訊較為困難。
 
-> 使用該專案 Gulp 時，就可以不用使用其他編譯工具編譯 SCSS 或是 JavaScript 囉。
+為了解決這個問題，本作品為一個桌遊導覽頁面，提供各種桌遊商品資訊、玩家心得分享以及遊戲技巧等全面性介紹。透過這個整合的桌遊資訊網站，可以幫助玩家更輕鬆地找到符合其需求的遊戲，同時分享桌遊愛好者的專業見解。作品著重於切版，具響應式網頁特性，可供電腦與手機裝置的使用者瀏覽。
+
+### -使用者故事
+(1)訪客
+1.我想瀏覽各桌遊類型資訊(包含桌遊介紹、致勝秘訣等)。
+2.我想查看推薦的桌遊相關網站。
+
+(2)前台使用者/會員
+1.我想申請註冊，獲得會員服務(含個人資料修改功能)
+2.我想使用發文或修改文章功能，進行發佈或修改一篇張貼的內容(EX.桌遊心得文章、致勝秘訣)
+3.我想瀏覽各桌遊的致勝秘訣
+4.我想針對單一篇文章進行評分(1~5顆星)或收藏功能
+
+## 數據資料來源
+- 自行定義
+
+## 網站規劃資訊
+- 網站地圖 (自行設計)
+  - https://whimsical.com/GgEkeSotLq25izUBEKCGcw
+- 線稿圖 (自行設計)
+  - https://whimsical.com/wireframe-H6DaiUfvTLmGsQtsfzwPKt
+- 線稿圖 (自行設計)
+  - https://whimsical.com/wireframe-H6DaiUfvTLmGsQtsfzwPKt
+
+## 設計稿資訊
+- UI設計師Kosugi Lai
+  - https://www.figma.com/file/QSVi1D6gjhcrd8FZ9ZCXAr/%E6%A1%8C%E9%81%8A%E9%80%97%E9%99%A3%E8%B5%B0?type=design&node-id=0-1&mode=design&t=uz8ly2j49WSJt6nF-0
+
+## 開發工具介紹
+- 作業系統：Windows 11（64 bit）
+- 開發工具：Visual Studio
+- 切版框架：Bootstrap 5
+  - CSS 預處理器：SCSS
+- 網頁互動效果套件
+  - Animate On Scroll Library（AOS）
+  - CKEditor 5
+- 版型管理
+  - EJS 樣板管理
+
+### 專案開發者的運行環境
+- Node v12.18.2
+  - 實際測試 Node 12~14 都是可以運行的
+  - 查看自己版本指令：`node -v`
+- Gulp
+  - CLI version: 2.3.0
+  - Local version: 4.0.2
+  - 查看自己版本指令：`gulp -v`
+- git version 2.23.0
+  - 查看自己版本指令：`git ---version`
+
+#### 調整當前運行環境
+使用 NVM 切換不同版本的 Node.js。以下指令為 windows 環境下執行。
+
+STEP1.下載 NVM
+點擊 https://github.com/coreybutler/nvm-windows/releases 頁面中的 nvm-setup.exe，下載後依循著安裝精靈即可完成。
+
+STEP2.CMD中輸入指定要安裝的node版本。
+nvm install 14
+
+STEP3.CMD中輸入切換到指定的node版本。
+nvm use 14
+
+STEP4.執行 Gulp 運行專案
+gulp
+
+## 資料夾結構
+- App # 原始碼
+  - assets # 靜態資源放置處
+    - images # 圖片放置處
+    - js # JavaScript 放置處
+    - style # 樣式放置處
+  - index.html # 首頁 HTML
+  - layout.ejs # Layout ejs
+- gulpfile.js # Gulp 原始碼
+  - envOptions.js # Gulp 路徑變數
+  - index.js # Gulp 核心原始碼
 
 ## 指令列表
+使用該六角學院專案 Gulp 時，就可以不用使用其他編譯工具編譯 SCSS 或是 JavaScript 囉。
 
 - `gulp` - 執行開發模式(會開啟模擬瀏覽器並監聽相關檔案)
   - 若沒有自動開啟瀏覽器則可手動在瀏覽器上輸入 `http://localhost:8080/` 即可。
@@ -14,26 +91,13 @@
 
 > 請務必確保已經在本機上輸入過 `npm install -g gulp`，否則電腦會不認識 `gulp` 指令哦。
 
-## 說明
 
+## 說明
 該分支專案預設載入 Bootstrap5 與 jQuery 等。
 
 若有需要調整相關路徑參數可在 `envOptions.js` 中調整，但建議不要隨意調整導致 Gulp 無法正常運行。
 
 假使對於 Gulp 不熟悉會建議不要任意調整 `gulpfile.js` 底下的資料任一檔案，避免出現無法正常運作之問題。
-
-## 資料夾結構
-
-- App # 原始碼
-  - assets # 靜態資源放置處
-    - images # 圖片放置處
-    - js # JavaScript 放置處
-    - style # 樣式放置處
-  - index.html # 首頁 HTML
-  - layout.ejs # Layout ejs
-- gulpfile.js # Gulp 原始碼
-  - envOptions.js # Gulp 路徑變數
-  - index.js # Gulp 核心原始碼
 
 ### 注意事項
 
@@ -106,20 +170,6 @@ Q: 輸入 `gulp deploy` 之後出現 「`Message: Command filed: git pull`」提
 A: 這邊請麻煩刪除隱藏的資料夾「`.publish`」再重新 `gulp deploy` 就可以囉。
 
 這種狀況通常發生在操作流程上可能不正確導致錯誤，因此打開「`.publish`」的時候會看到未編譯後的 Gulp 原始碼，正確來講該資料夾底下只會有編譯後的原始碼，如果刪除「`.publish`」之後狀況還是沒改善，那麼建議刪除「`dist`」資料夾並重新輸入 `gulp build` → `gulp deploy` 即可。
-
-Q: 以上問題都無法解決
-
-A: 建議可以查看一下自己的相關版本，以下是專案開發者的運行環境
-
-- Node v12.18.2
-  - 實際測試 Node 12~14 都是可以運行的
-  - 查看自己版本指令：`node -v`
-- Gulp
-  - CLI version: 2.3.0
-  - Local version: 4.0.2
-  - 查看自己版本指令：`gulp -v`
-- git version 2.23.0
-  - 查看自己版本指令：`git ---version`
 
 ## 學習資源
 
